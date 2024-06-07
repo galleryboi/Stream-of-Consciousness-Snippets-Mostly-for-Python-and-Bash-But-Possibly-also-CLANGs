@@ -1,0 +1,72 @@
+#!/usr/bin/env python3
+
+
+
+
+
+# Takes a given value for
+# a vector's magnitude, 
+# and adjusts the vector's
+# components to result in
+# the target magnitude
+
+
+
+# 'c' is the target magnitude
+
+# 'x', 'y', and 'z' are the components
+# of a starting vector you would like
+# adjusted, or which is represented in 
+# a different system you would like
+# converted
+# -----------------------------------
+c=441
+
+x=255
+y=255
+z=255
+# --------------------------
+# If using a 255 step system, the 
+# maximum is 441
+# This script does not cap maximums,
+# so you just kind of have to be
+# mindful of that or cap it yourself
+
+
+
+# Takes the starting magnitude, 
+# and creates a ratio with the
+# target magnitude
+# ----------------------------
+w = (x**2+y**2+z**2)**0.5
+a = c/w
+
+
+# Applies the ratio to each
+# of the vector's components,
+# adjusting their values 
+# ----------------------------
+x = x*a
+y = y*a
+z = z*a
+
+
+
+# 'w' is the magnitude of the vector
+# you've created with the 'x', 'y',
+# and 'z' inputs
+
+# Below this point; 'x', 'y', and 'z'
+# are the adjusted values that
+# result in your target magnitude
+
+# The output is in integers because
+# I don't like how dirty math gets
+# with floating points, so I like
+# to have my functions at least output
+# integers whenever possible
+# ---------------------------------
+print(int(w))
+print("--------------------------")
+print(int(x),int(y),int(z))
+print("--------------------------")

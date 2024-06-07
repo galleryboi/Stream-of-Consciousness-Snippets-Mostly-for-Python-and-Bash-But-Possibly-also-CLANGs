@@ -1,0 +1,43 @@
+#!/usr/bin/env python3
+
+# The value "b=0", and the script:
+
+# b=(b+1)
+# b=(b%20)
+# if (b==0):
+# break
+
+# are included to act as a timing mechanism
+
+
+
+
+# They can be copied and pasted into any looping
+# script
+
+# The integer in (b%20) can be changed to 
+# any number, and the new number will be the number 
+# of times the script loops
+
+
+sum=15
+b=0
+
+for i in range(5,28):
+    sum=sum+i
+    a=(sum)
+    b=(b+1)
+    b=(b%20)
+    if (b==0):
+        break
+
+
+    print(a)
+    print(b)
+
+
+# "print(b)" should return a number up to,
+# but not including, the integer in (b%20) 
+
+# As is, print(b) should return numbers 1-19, 
+# and break the loop, terminating the script

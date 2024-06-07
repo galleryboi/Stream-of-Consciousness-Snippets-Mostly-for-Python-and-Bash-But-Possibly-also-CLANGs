@@ -1,0 +1,53 @@
+#!/usr/bin/env python3
+
+
+
+
+# A Python script to return
+# the magnitude of a vector
+# with three components
+
+# -------------------------
+# The components can be
+# any value, but
+# each component is shown
+# here as 255
+# because it is a very
+# practical maximum
+# -------------------------
+
+x=255
+y=255
+z=255
+
+
+
+
+# The adding of vectors
+# one at a time, which
+# was my original solution
+# to the problems this
+# addressed
+# -------------------------
+a = x**2 + y**2
+b = a + z**2
+c = b**0.5
+
+
+# A more simplified version
+# of the above operations,
+# condensed down into one
+# line and no intermediate
+# variables
+# -------------------------
+w = (x**2 + y**2 + z**2)**0.5
+
+print(c)
+print(w)
+
+
+# returns the magnitude
+# of a vector with
+# three components
+
+# twice
